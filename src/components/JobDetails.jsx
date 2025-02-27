@@ -47,11 +47,9 @@ export default function JobDetails({ job, onClose }) {
               <strong>Required Skills:</strong> {job.requiredSkills.join(", ")}
             </p>
           </div>
+
           <div className="modal-footer">
-            <button
-              className="btn btn-primary"
-              onClick={() => alert("Application submitted!")}
-            >
+            <button className="btn btn-primary" onClick={handleApply}>
               Apply Now
             </button>
             <button className="btn btn-secondary" onClick={onClose}>
